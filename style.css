@@ -3,6 +3,7 @@
 :root {
   --green: #596d48;
   --gray: #e5e7eb;
+  --shadow-color: #d4d3d3;
   --header-width: 38%;
   --form-height: 35 %;
   box-sizing: border-box;
@@ -84,28 +85,41 @@ body {
 }
 
 .main-upper {
-  padding: 80px 64px;
+  padding: 100px 8% 48px 8%;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main-upper p:nth-of-type(3) {
+  padding-top: 20px;
 }
 
 .main-center {
-  padding: 20px 64px;
+  padding: 20px 0 20px 8%;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 4px 8px rgb(212, 211, 211);
+  box-shadow: 0px 4px 8px var(--shadow-color);
 }
 
 .main-center > p {
   width: 100%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .form-item {
-  width: 38%;
+  width: 270px;
   margin: 10px 0;
 }
 
 label {
   display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #4b4b4b;
+  margin-bottom: 5px;
 }
 
 input {
@@ -114,9 +128,21 @@ input {
 }
 
 form > button {
-  margin: 20px 64px 10px 64px;
+  margin: 40px 0 20px 8%;
+  padding: 18px 48px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 10px var(--shadow-color);
+  color: white;
+  font-weight: 900;
 }
 
 .main-lower {
-  padding: 0 64px;
+  padding: 0 8%;
+}
+
+.main-lower a {
+  text-decoration: none;
+  color: var(--green);
 }
