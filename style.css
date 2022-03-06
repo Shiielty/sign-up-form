@@ -25,12 +25,12 @@
   width: 100%;
 }
 
-header {
+.header-title {
   background-color: rgba(26, 25, 25, 0.637);
   position: absolute;
   top: 150px;
   width: 100%;
-  height: 120px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,11 +38,28 @@ header {
 
 .logo-img {
   width: auto;
-  height: 80px;
+  height: 110px;
 }
 
-header > h1 {
+.header-title > h1 {
   font-family: "Norse";
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
+}
+
+.header-wrapper > p,
+.header-wrapper > p > a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.header-wrapper > p {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.header-wrapper > p > a {
+  text-decoration: underline;
 }
