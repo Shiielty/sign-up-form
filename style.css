@@ -132,11 +132,6 @@ input:focus {
   box-shadow: 3px 3px 3px var(--shadow-color);
 }
 
-.error:invalid {
-  border: 1px solid red;
-  box-shadow: 3px 3px 3px var(--shadow-color);
-}
-
 form > button {
   margin: 40px 0 20px 8%;
   padding: 18px 48px;
