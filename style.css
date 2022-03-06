@@ -2,6 +2,9 @@
 
 :root {
   --green: #596d48;
+  --header-width: 38%;
+  --form-height: 35 %;
+  box-sizing: border-box;
 }
 
 /* import fonts */
@@ -11,18 +14,24 @@
   src: url(./public/norse-bold-webfont.woff) format("woff");
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   display: flex;
   width: 100%;
+  min-height: 100vh;
 }
 
 .header-wrapper {
-  width: 38%;
+  width: var(--header-width);
   position: relative;
 }
 
 .header-wrapper > img {
   width: 100%;
+  height: 100%;
 }
 
 .header-title {
@@ -62,4 +71,19 @@
 
 .header-wrapper > p > a {
   text-decoration: underline;
+}
+
+.main-wrapper {
+  width: calc(100% - var(--header-width));
+}
+
+.main-upper,
+.main-lower {
+  padding: 100px 32px;
+  background-color: aquamarine;
+}
+
+.main-center {
+  padding: 20px 32px;
+  background-color: white;
 }
