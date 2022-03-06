@@ -127,6 +127,16 @@ input {
   border-radius: 0.2rem;
 }
 
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 3px 3px 3px var(--shadow-color);
+}
+
+.error:invalid {
+  border: 1px solid red;
+  box-shadow: 3px 3px 3px var(--shadow-color);
+}
+
 form > button {
   margin: 40px 0 20px 8%;
   padding: 18px 48px;
@@ -136,6 +146,11 @@ form > button {
   box-shadow: 3px 3px 10px var(--shadow-color);
   color: white;
   font-weight: 900;
+  cursor: pointer;
+}
+
+form > button:active {
+  background-color: #465538;
 }
 
 .main-lower {
