@@ -20,7 +20,7 @@ p {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #f8f8f8;
 }
 
 .container {
@@ -84,14 +84,39 @@ body {
 }
 
 .main-upper {
-  padding: 80px 32px;
+  padding: 80px 64px;
 }
 
 .main-center {
-  padding: 20px 32px;
+  padding: 20px 64px;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 8px rgb(212, 211, 211);
+}
+
+.main-center > p {
+  width: 100%;
+}
+
+.form-item {
+  width: 38%;
+  margin: 10px 0;
 }
 
 label {
   display: block;
+}
+
+input {
+  border: var(--gray) 1px solid;
+  border-radius: 0.2rem;
+}
+
+form > button {
+  margin: 20px 64px 10px 64px;
+}
+
+.main-lower {
+  padding: 0 64px;
 }
